@@ -1,0 +1,74 @@
+Create customer:
+Deposit using the deposit():
+View balance using the view_balance():
+withdraw using the withdraw():
+..................................
+>>> allan = Bank("Allan Walters",32,"Male")
+>>> rose = Bank("Rose Summers",30,"Female")
+>>> rose.deposit(1002)
+Account Balance Updated: Ksh 1002
+>>> allan.deposit(560)
+Account Balance Updated: Ksh 560
+>>> rose.view_balance()
+Customer Details
+
+Name:   Rose Summers
+Age:    30
+Gender: Female
+Account Balance. KSh. 1002
+>>> allan.view_balance()
+Customer Details
+
+Name:   Allan Walters
+Age:    32
+Gender: Male
+Account Balance. KSh. 560
+>>> allan.withdraw(1000)
+Insufficient Balance.
+Available Balance: KSh. 560
+>>> rose.withdraw(2000)
+Insufficient Balance.
+Available Balance: KSh. 1002
+>>> allan.view_balance()
+Customer Details
+
+Name:   Allan Walters
+Age:    32
+Gender: Male
+Account Balance. KSh. 560
+>>> rose.show_details()
+Customer Details
+
+Name:   Rose Summers
+Age:    30
+Gender: Female
+>>> rose.withdraw(34)
+Withdrawal Successful.
+Amount withdrawn: Ksh. 34
+Account Balance: KSh. 968
+>>> rose.view_balance()
+Customer Details
+
+Name:   Rose Summers
+Age:    30
+Gender: Female
+Account Balance. KSh. 968
+>>> rose.deposit(4568)
+Account Balance Updated: Ksh 5536
+>>> allan.deposit(3432)
+Account Balance Updated: Ksh 3992
+>>> allan.view_balance()
+Customer Details
+
+Name:   Allan Walters
+Age:    32
+Gender: Male
+Account Balance. KSh. 3992
+>>> rose.view_balance()
+Customer Details
+
+Name:   Rose Summers
+Age:    30
+Gender: Female
+Account Balance. KSh. 5536
+>>> 
